@@ -43,3 +43,23 @@ class Servicio(ABC):
     @abstractmethod
     def calcular_costo(self, duracion):
         pass
+
+class ReservaSala(Servicio):
+
+    def calcular_costo(self, duracion):
+        self.validar_disponibilidad(duracion)
+        return self.precio_base * duracion
+
+
+class AlquilerEquipo(Servicio):
+
+    def calcular_costo(self, duracion):
+        self.validar_disponibilidad(duracion)
+        return self.precio_base * duracion
+
+
+class AsesoriaEspecializada(Servicio):
+
+    def calcular_costo(self, duracion):
+        self.validar_disponibilidad(duracion)
+        return self.precio_base * duracion
