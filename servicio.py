@@ -19,6 +19,9 @@ class Servicio(ABC):
         self.__precio_base = precio_base
         self.__descripcion = descripcion
 
+    def __str__(self):
+        return self.nombre
+
     @property
     def codigo(self):
         return self.__codigo

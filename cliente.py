@@ -33,3 +33,5 @@ class Cliente(Entidad):
         print("Nombre:", self.nombre)
         print("Correo:", self.correo)
         print("Telefono:", self.telefono)
+    def __str__(self):
+        return self.nombre
