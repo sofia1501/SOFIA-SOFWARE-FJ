@@ -2,13 +2,13 @@
 
 ## 1. Descripción
 
-Proyecto académico desarrollado en Python para la gestión de clientes, servicios y reservas de la empresa Software FJ.
+Proyecto académico desarrollado en Python para gestionar clientes, servicios y reservas de la empresa ficticia Software FJ.
 
-El sistema permitirá administrar diferentes tipos de servicios, registrar clientes y gestionar reservas mediante una aplicación basada en programación orientada a objetos.
+El sistema utiliza programación orientada a objetos y una arquitectura modular que permite registrar clientes, administrar diferentes tipos de servicios, calcular costos y gestionar reservas.
 
 ## 2. Objetivo general
 
-Desarrollar una aplicación modular que permita gestionar clientes, servicios y reservas, aplicando los principios de programación orientada a objetos y el manejo avanzado de excepciones.
+Desarrollar una aplicación modular que permita gestionar clientes, servicios y reservas, aplicando los principios de programación orientada a objetos y el manejo de excepciones.
 
 ## 3. Objetivos específicos
 
@@ -20,10 +20,9 @@ Desarrollar una aplicación modular que permita gestionar clientes, servicios y 
 - Registrar eventos y errores mediante archivos de logs.
 - Realizar pruebas para verificar el funcionamiento del sistema.
 
-## 4. Integrantes
+## 4. Integrante
 
 - Sofía Espinel Ávila.
-
 
 ## 5. Lenguaje y herramientas
 
@@ -33,26 +32,14 @@ Desarrollar una aplicación modular que permita gestionar clientes, servicios y 
 
 ## 6. Almacenamiento
 
-El sistema no utiliza bases de datos. La información se gestiona mediante objetos, listas internas y archivos destinados al registro de eventos y errores.
+El sistema no utiliza bases de datos. La información se administra mediante objetos y listas internas. Los archivos se utilizan para registrar eventos y errores del sistema.
 
-## 7. Archivos del proyecto
+## 7. Estructura de archivos
 
+- `entidad.py`: contiene la clase abstracta Entidad.
+- `cliente.py`: implementa la gestión y validación de clientes.
+- `servicio.py`: contiene la clase abstracta Servicio y sus tres clases especializadas.
+- `reserva.py`: gestiona la creación, cálculo de costos, confirmación y cancelación de reservas.
 - `excepciones.py`: contiene las excepciones personalizadas.
-- `logs.py`: permite registrar eventos y errores.
-- `reserva.py`: contiene la lógica de gestión de reservas.
-- `main.py`: permite ejecutar el programa y realizar las pruebas.
-
-Los módulos de clientes y servicios se incorporarán durante el desarrollo e integración del proyecto.
-
-## 8. Ejecución
-
-Para ejecutar el programa desde la terminal:
-
-```bash
-python3 main.py
-```
-
-## 9. Estado del proyecto
-
-Actualmente se encuentra desarrollado y probado el módulo inicial de reservas, con 11 pruebas ejecutadas. Los demás componentes se integrarán progresivamente para completar el sistema.
-
+- `logs.py`: configura el registro de eventos y errores.
+-

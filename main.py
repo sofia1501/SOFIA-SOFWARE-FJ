@@ -110,12 +110,24 @@ except ErrorReserva as error:
     print("Error controlado:", error)
 
 
-# PRUEBA 5: Calcular el costo con descuento e impuesto
+# PRUEBA 5: Calcular el costo de diferentes maneras
 print("\nPRUEBA 5: Calcular costo")
 
 try:
-    costo = reserva.calcular_costo(10, 19)
-    print("Costo total:", costo)
+    print(
+        "Costo sin descuento ni impuesto:",
+        reserva.calcular_costo()
+    )
+
+    print(
+        "Costo con descuento del 10%:",
+        reserva.calcular_costo(10)
+    )
+
+    print(
+        "Costo con descuento del 10% e impuesto del 19%:",
+        reserva.calcular_costo(10, 19)
+    )
 
 except ErrorReserva as error:
     print("Error controlado:", error)
