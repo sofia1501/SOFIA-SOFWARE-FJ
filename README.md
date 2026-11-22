@@ -32,7 +32,7 @@ Desarrollar una aplicación modular que permita gestionar clientes, servicios y 
 
 ## 6. Almacenamiento
 
-El sistema no utiliza bases de datos. La información se administra mediante objetos y listas internas. Los archivos se utilizan para registrar eventos y errores del sistema.
+El sistema no utiliza bases de datos. La información se administra mediante objetos y estructuras de datos internas. Los archivos se utilizan para registrar eventos y errores del sistema.
 
 ## 7. Estructura de archivos
 
@@ -42,7 +42,6 @@ El sistema no utiliza bases de datos. La información se administra mediante obj
 - `reserva.py`: gestiona la creación, cálculo de costos, confirmación y cancelación de reservas.
 - `excepciones.py`: contiene las excepciones personalizadas.
 - `logs.py`: configura el registro de eventos y errores.
-
 - `main.py`: integra los módulos y ejecuta las pruebas generales del sistema.
 - `prueba_cliente.py`: contiene las pruebas individuales del módulo de clientes.
 - `prueba_servicio.py`: contiene las pruebas individuales del módulo de servicios.
