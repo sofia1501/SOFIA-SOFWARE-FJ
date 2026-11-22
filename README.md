@@ -77,4 +77,4 @@ python3 prueba_servicio.py
 
 El sistema cuenta con sus módulos principales desarrollados e integrados. Se realizaron pruebas individuales de clientes y servicios, así como 14 pruebas en el programa principal.
 
-El proyecto utiliza objetos, listas internas y archivos de registro, sin conexión a bases de datos.
+El proyecto utiliza objetos, structuras de datos internas y archivos de registro, sin conexión a bases de datos.
